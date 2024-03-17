@@ -160,6 +160,22 @@ img {
 
 }
 
+
+/* Hide Content Initially*/
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+
+.show {
+    display: block !important;
+}
+
+
+
 #tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -319,11 +335,14 @@ img {
 }
 
 
+.btn-icon {
+    margin-left: 1rem;
+}
 
 
 @media(max-width: 960px) {
     .showcase {
-        height 70wh;
+        height 70vh;
     }
 
     .hide-sm {
@@ -371,7 +390,7 @@ img {
 @media(max-width:700px) {
     .showcase::after {
 
-        box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+        box-shadow: inset 70px 70px 250px #000000, inset -70px -70px 250px #000000;
     }
 
     #tab-1-content .tab-1-content-inner {
