@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="https://i.ibb.co/r5krrdz/logo.png" alt="Netflix">
+            <a href="SignIn.html" class="btn btn-rounded"> Sign in </a>
+        </div>
+
+        <div class="signup-content">
+            <h1> Unlimited movies, TV shows and more </h1>
+            <h2> watch anyware. cancel anytime </h2>
+            <form action="#">
+                <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="email">
+                    <input type="email" name="email" id="eml" placeholder="Email Address"> &nbsp;
+                    <button type="button" onclick="sendOTP()"> Get Started <i class="fas fa-chevron-right btn-icon"></i>
+                    </button>
+                    
+                </div>
+            </form>
+        </div>
+        </div>
+    </header>
+
+
+    </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Netflix India- Netflix - Watch Movies Online </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="https://i.ibb.co/r5krrdz/logo.png" alt="Netflix">
+            <a href="signin.html" class="btn btn-rounded"> Sign in </a>
+        </div>
+
+        <div class="signup-content">
+            <h1> Unlimited movies, TV shows and more </h1>
+            <h2> watch anyware. cancel anytime </h2>
+            <form id="signupForm">
+                <h3> Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="email">
+                    <input type="email" name="email" id="eml" placeholder="Email Address"> &nbsp;
+                    <button type="button" onclick="validateEmail()"> Get Started <i
+                            class="fas fa-chevron-right btn-icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("eml").value;
+            var emailRegex = /@gmail.com/;
+            if (emailRegex.test(email)) {
+                window.location.href = "signup.html";
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+</body>
+
+</html>
